@@ -29,10 +29,16 @@
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="29x-Op-DDS">
                                         <rect key="frame" x="0.0" y="0.0" width="207" height="40"/>
                                         <state key="normal" title="New Game"/>
+                                        <connections>
+                                            <action selector="pressedNewGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="261-bV-EyN"/>
+                                        </connections>
                                     </button>
                                     <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Uz2-5k-h9A">
                                         <rect key="frame" x="207" y="0.0" width="207" height="40"/>
                                         <state key="normal" title="Enter Round"/>
+                                        <connections>
+                                            <action selector="pressedEnterRound:" destination="BYZ-38-t0r" eventType="touchUpInside" id="mst-fT-6w9"/>
+                                        </connections>
                                     </button>
                                 </subviews>
                             </stackView>
@@ -152,6 +158,17 @@
                             <constraint firstItem="6Tk-OE-BBY" firstAttribute="trailing" secondItem="oh9-9w-Zib" secondAttribute="trailing" id="wR9-lM-mqC"/>
                         </constraints>
                     </view>
+                    <connections>
+                        <outlet property="player1ScoreTextField" destination="VMr-Sc-xC0" id="dzR-yU-N1d"/>
+                        <outlet property="player1ScoresTextView" destination="ZTF-ha-lRr" id="JIX-Y4-tlQ"/>
+                        <outlet property="player2ScoreTextField" destination="abm-5P-Mu3" id="iaB-h8-yXA"/>
+                        <outlet property="player2ScoresTextView" destination="313-5E-Hs0" id="iOi-D9-ZbV"/>
+                        <outlet property="player3ScoreTextField" destination="8Tx-Mb-wKU" id="T1Y-1L-kbX"/>
+                        <outlet property="player3ScoresTextView" destination="a0R-O7-HNq" id="Std-b9-3JP"/>
+                        <outlet property="player4ScoreTextField" destination="NJg-bw-Lyn" id="5Gc-BI-gfY"/>
+                        <outlet property="player4ScoresTextView" destination="GVT-bF-wPu" id="6A1-ND-TDp"/>
+                        <outlet property="roundLabel" destination="oh9-9w-Zib" id="rEw-5s-HHy"/>
+                    </connections>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
